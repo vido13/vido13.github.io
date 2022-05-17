@@ -2272,6 +2272,46 @@ body.menu-is-open {
   top: 50%;
 }
 
+.home-content__scroll_back {
+  position: absolute;
+  left: 9.5rem;
+  bottom: 5.4rem;
+  -webkit-transform: rotate(-90deg) translate3d(100%, 50%, 0);
+  -ms-transform: rotate(-90deg) translate3d(100%, 50%, 0);
+  transform: rotate(-90deg) translate3d(100%, 50%, 0);
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.home-content__scroll_back .scroll-link {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .35rem;
+  text-align: left;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 180px;
+}
+
+.home-content__scroll_back .scroll-link:hover,
+.home-content__scroll_back .scroll-link:focus {
+  color: #f90;
+}
+
+.home-content__scroll_back::after {
+  content: "";
+  display: block;
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 150px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
 /* ------------------------------------------------------------------- 
  * ## home social
  * ------------------------------------------------------------------- */
@@ -2734,6 +2774,96 @@ html.no-csstransitions .home-content__main {
   background-color: #121212;
   position: relative;
 }
+/* ------------------------------------------------------------------- 
+ * ## about slideshow
+ * ------------------------------------------------------------------- */
+ * {box-sizing:border-box}
+
+ /* Slideshow container */
+ .slideshow-container {
+   max-width: 500px;
+   position: relative;
+   margin: auto;
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+ 
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ 
+ /* Caption text */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+ 
+ /* Fading animation */
+ .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ 
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
 
 /* ------------------------------------------------------------------- 
  * ## about process
