@@ -2272,13 +2272,8 @@ body.menu-is-open {
   top: 50%;
 }
 
-.home-content__scroll_back {
-  position: absolute;
+.home-content__scroll .back {
   left: 9.5rem;
-  bottom: 5.4rem;
-  -webkit-transform: rotate(-90deg) translate3d(100%, 50%, 0);
-  -ms-transform: rotate(-90deg) translate3d(100%, 50%, 0);
-  transform: rotate(-90deg) translate3d(100%, 50%, 0);
   -webkit-transform-origin: left bottom;
   -ms-transform-origin: left bottom;
   transform-origin: left bottom;
@@ -2665,6 +2660,11 @@ html.no-csstransitions .home-content__main {
 
   .home-content__scroll {
     right: 5rem;
+    bottom: 4.8rem;
+  }
+
+  .home-content__scroll_back {
+    left: 5rem;
     bottom: 4.8rem;
   }
 
